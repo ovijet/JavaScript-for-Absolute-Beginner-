@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #007acc;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    section {
+      padding: 20px;
+      margin: 10px;
+      background: white;
+      border-radius: 10px;
+    }
+    img {
+      width: 120px;
+      border-radius: 50%;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ovijet Halder</h1>
+    <p>Future Web Developer 🚀</p>
+    <img src="https://via.placeholder.com/120" alt="My Photo">
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I am learning web development with Programming Hero. My dream is to become a professional full-stack developer.</p>
+  </section>
+
+  <section>
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript (Basic)</li>
+      <li>Problem Solving</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 All Rights Reserved | Ovijet Halder</p>
+  </footer>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+    }
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🛒 Shopping Cart</h2>
+    <input type="text" id="product" placeholder="Product Name">
+    <input type="number" id="price" placeholder="Price">
+    <input type="number" id="quantity" placeholder="Quantity">
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="result" id="output"></div>
+  </div>
+
+  <script>
+    function calculate() {
+      let price = Number(document.getElementById('price').value);
+      let quantity = Number(document.getElementById('quantity').value);
+
+      let total = price * quantity;
+      let discount = 0;
+
+      if (total >= 500) {
+        discount = total * 0.10; // 10% discount
+      }
+
+      let finalPrice = total - discount;
+
+      document.getElementById('output').innerHTML =
+        `Total: ${total} Tk <br>
+         Discount: ${discount} Tk <br>
+         Final Price: ${finalPrice} Tk`;
+    }
+  </script>
+</body>
+</html>
