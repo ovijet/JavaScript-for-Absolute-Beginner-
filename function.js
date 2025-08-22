@@ -18,3 +18,4 @@ function sum(a, b) {
   return result;
 }
 
+console.log(sum(10, 20));
