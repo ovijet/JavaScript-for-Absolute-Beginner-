@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document object model</title>
+    <style>
+      article {
+        border: 2px solid palevioletred;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <!-- <h1 id="head">ovijet halder</h1>
+      <p id="para">Lorem ipsum dolor sit amet.</p> -->
+
+      <article>
+        <h3>article-1</h3>
+        <p class="para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed,
+          recusandae?
+        </p>
+      </article>
+      <article>
+        <h3>article-2</h3>
+        <p class="para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed,
+          recusandae?
+        </p>
+      </article>
+      <article>
+        <h3>article-3</h3>
+        <p class="para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed,
+          recusandae?
+        </p>
+      </article>
+    </section>
+
+    <script>
+      // let first = document.getElementById("para");
+      // first.style.background = "red";
+      // first.style.color = "white";
+      // first.style.fontSize = "50px";
+
+      // let head = document.getElementById("head");
+      // head.style.backgroundColor = 'black';
+      // head.style.color = "white";
+
+      let className = document.getElementsByClassName("para");
+
+      for (let i = 0; i < className.length; i++) {
+        let element = className[i];
+        console.log(element.innerHTML);
+        
+        element.style.color = "green";
+      }
+    </script>
+  </body>
+</html>
