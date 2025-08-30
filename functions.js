@@ -11,5 +11,6 @@ for (let i = 0; i < num.length; i++) {
     console.log(nums, ": is odd number");
   } else {
     console.log(nums *2 , ": is even number");
+    // return nums;
   }
 }
