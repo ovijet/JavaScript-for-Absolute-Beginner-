@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 onclick="head()">Exploing Event</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse veniam iure enim eligendi, quisquam natus dicta ea tenetur suscipit minima neque molestias id dolore consectetur distinctio minus eius commodi molestiae excepturi sit! Adipisci culpa nemo accusantium vero repellat unde odio saepe porro esse, aperiam maiores earum similique consequatur? Maiores ipsam nihil tenetur possimus molestiae blanditiis tempora inventore cupiditate alias ut modi, tempore debitis dolorum dolore repellendus enim nulla qui aperiam aspernatur ullam accusamus quis ex. Vitae maxime, vel suscipit dolorum quisquam perferendis officia quidem voluptas officiis molestiae labore vero magni culpa eum temporibus animi non molestias iusto aut omnis eaque.</p>
+    <button>click me-0</button>
+    <button>click me-1</button>
+    <button id="second">click me-2</button>
+    <button id="last">click me-3</button>
+    <script>
+      document.getElementById("last").addEventListener("click", function () {
+        document.body.style.color = "red";
+      });
+
+      // function head() {
+      //   document.body.style.backgroundColor = "hotpink";
+      // }
+      // let secondButton = document.getElementById("second");
+      // secondButton.addEventListener("click", head);
+      // secondButton.onclick = head;
+      //  function () {
+      //   console.log("somethink is rong");
+      // };
+    </script>
+  </body>
+</html>

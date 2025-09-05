@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dOM</title>
+  </head>
+  <body>
+    <!-- <button>click me</button>
+    <button id="secondBtn">click me</button>
+    <button>click me</button> -->
+
+    <div class="container">
+      <h1>myList</h1>
+      <ul class="myList">
+        <li class="item">consectetur adipisicing elit</li>
+        <li class="item">Lorem ipsum dolor sit amet.</li>
+        <li class="item">quae vel beatae incidunt</li>
+        <li class="item">Laborum numquam nesciunt.</li>
+        <button class="btn">add me item</button>
+      </ul>
+    </div>
+
+    <script>
+      //   document
+      //     .getElementById("secondBtn")
+      //     .addEventListener("click", function () {
+      //       document.body.style.backgroundColor = "cyan";
+      //     });
+      //   btn.onclick = function () {
+      //     document.body.style.backgroundColor = "cyan";
+      //   };
+
+      let items = document.getElementsByClassName("item");
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        item.addEventListener("click", function (event) {
+          console.log(this, event.target.parentNode);
+        });
+      }
+
+      // document
+      //   .getElementById("btn")
+      //   .addEventListener("click", function (event) {
+      //     let add = document.getElementById("myList");
+      //     let newItem = document.createElement("li");
+      //     newItem.innerText = "brand new item";
+      //     add.appendChild(newItem);
+      //   });
+    </script>
+  </body>
+</html>
